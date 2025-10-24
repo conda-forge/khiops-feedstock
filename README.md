@@ -3,7 +3,7 @@ About khiops-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/khiops-feedstock/blob/main/LICENSE.txt)
 
-Home: https://khiops.org/11.0.0-b.0/
+Home: https://khiops.org
 
 Package license: BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: Python library for the Khiops AutoML suite
 
 Development: https://github.com/khiopsml/khiops-python
 
-Documentation: https://khiops.org/11.0.0-b.0/api-docs/python-api
+Documentation: https://khiops.org
 
 Current build status
 ====================
