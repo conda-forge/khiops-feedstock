@@ -47,11 +47,11 @@ test:
     - pip
 
 about:
-  home: https://khiops.org/11.0.0-b.0/
+  home: https://khiops.org
   summary: Python library for the Khiops AutoML suite
   license: BSD-3-Clause
   license_file: LICENSE.md
-  doc_url: https://khiops.org/11.0.0-b.0/api-docs/python-api
+  doc_url: https://khiops.org
   dev_url: https://github.com/khiopsml/khiops-python
 
 extra:
