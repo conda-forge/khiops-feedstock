@@ -11,7 +11,7 @@ Summary: Python library for the Khiops AutoML suite
 
 Development: https://github.com/khiopsml/khiops-python
 
-Documentation: https://khiops.org/api-docs/python-api
+Documentation: https://khiops.org
 
 Current build status
 ====================
