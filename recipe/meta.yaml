@@ -1,5 +1,5 @@
 {% set name = "khiops" %}
-{% set version = "11.0.0.0" %}
+{% set version = "11.0.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 35b03439b515e528a87bf0d42c93f047a1bf7e3fe95f9fb1aa8d0e8f360337de
+  sha256: 7e0b6e2c1bfa89825f57de2ce995bd50be4eb26a2902ec8439544f6646c67718
 
 build:
   entry_points:
