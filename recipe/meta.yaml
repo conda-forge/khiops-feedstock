@@ -1,5 +1,5 @@
 {% set name = "khiops" %}
-{% set version = "11.0.0.2" %}
+{% set version = "11.0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 318e44fcb9ed9733c68846851ef190157df621ffab2e75a05c67ac1039c4f935
+  sha256: 866b95794deed500417c7ac5dc03bd093171fc562819488feebfc01e09bdd965
 
 build:
   entry_points:
@@ -26,8 +26,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - khiops-core =11.0.0
-    - pandas >=0.25.3,<=2.3.3
-    - scikit-learn >=0.22.2
+    - pandas >=2.3.3,<4.0.0
+    - scikit-learn >=1.7.2,<1.9.0
   run_constrained:
     # do not necessary use the latest version
     # to avoid undesired breaking changes
