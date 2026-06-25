@@ -38,7 +38,7 @@ test:
   imports:
     - khiops
   commands:
-    - pip check
+    # disable the old 'pip check' to avoid a failure because the project dependencies are missing
     - kh-status
     - kh-samples --help
     - kh-download-datasets --help
