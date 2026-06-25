@@ -17,10 +17,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26715&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/khiops-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/khiops-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/khiops-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -36,14 +37,14 @@ Current release info
 Installing khiops
 =================
 
-Installing `khiops` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `khiops` from the `conda-forge/label/rc` channel can be achieved by adding `conda-forge/label/rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `khiops` can be installed with `conda`:
+Once the `conda-forge/label/rc` channel has been enabled, `khiops` can be installed with `conda`:
 
 ```
 conda install khiops
@@ -58,26 +59,26 @@ mamba install khiops
 It is possible to list all of the versions of `khiops` available on your platform with `conda`:
 
 ```
-conda search khiops --channel conda-forge
+conda search khiops --channel conda-forge/label/rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search khiops --channel conda-forge
+mamba search khiops --channel conda-forge/label/rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search khiops --channel conda-forge
+mamba repoquery search khiops --channel conda-forge/label/rc
 
 # List packages depending on `khiops`:
-mamba repoquery whoneeds khiops --channel conda-forge
+mamba repoquery whoneeds khiops --channel conda-forge/label/rc
 
 # List dependencies of `khiops`:
-mamba repoquery depends khiops --channel conda-forge
+mamba repoquery depends khiops --channel conda-forge/label/rc
 ```
 
 
@@ -147,6 +148,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@bruno-at-orange](https://github.com/bruno-at-orange/)
 * [@popescu-v](https://github.com/popescu-v/)
 * [@tramora](https://github.com/tramora/)
 

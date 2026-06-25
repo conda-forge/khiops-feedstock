@@ -1,13 +1,13 @@
 {% set name = "khiops" %}
-{% set version = "11.0.0.3" %}
+{% set version = "11.0.1.0rc.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 866b95794deed500417c7ac5dc03bd093171fc562819488feebfc01e09bdd965
+  url: https://test-files.pythonhosted.org/packages/d8/9c/2d11fe7aae35e3d6ab8cf9eeaca20c8a39bbc9b33591521a177d9f6f48c6/{{ name }}-{{ version.replace("rc.2", "rc2") }}.tar.gz
+  sha256: 7cdc6aa58e1512856fc3b8d07d02c2bd0e3569e2d6b1518982fb852dcb48bfa5
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - khiops-core =11.0.0
+    - khiops-core =11.0.1rc.2
     - pandas >=2.3.3,<4.0.0
     - scikit-learn >=1.7.2,<1.9.0
   run_constrained:
@@ -58,3 +58,4 @@ extra:
   recipe-maintainers:
     - popescu-v
     - tramora
+    - bruno-at-orange
