@@ -1,5 +1,5 @@
 ---
 channel_sources:
-  - conda-forge
+  - conda-forge/label/rc,conda-forge
 channel_targets:
-  - conda-forge main # publish on label main (release)
+  - conda-forge rc # publish on label 'main' only for official releases otherwise use 'rc'
