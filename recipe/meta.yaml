@@ -1,13 +1,13 @@
 {% set name = "khiops" %}
-{% set version = "11.0.1.0rc.2" %}
+{% set version = "11.0.1.0rc.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://test-files.pythonhosted.org/packages/d8/9c/2d11fe7aae35e3d6ab8cf9eeaca20c8a39bbc9b33591521a177d9f6f48c6/{{ name }}-{{ version.replace("rc.2", "rc2") }}.tar.gz
-  sha256: 7cdc6aa58e1512856fc3b8d07d02c2bd0e3569e2d6b1518982fb852dcb48bfa5
+  url: https://test-files.pythonhosted.org/packages/99/5c/2c59b5a15a002893328349c7db2090db2fc17f8955428c5a37d15d0463f8/{{ name }}-{{ version.replace("rc.3", "rc3") }}.tar.gz
+  sha256: be53b7a01953a156839d5f2dab39134bb23e39c1166826263fffcaab0090ce0d
 
 build:
   entry_points:
@@ -38,7 +38,6 @@ test:
   imports:
     - khiops
   commands:
-    # disable the old 'pip check' to avoid a failure because the project dependencies are missing
     - kh-status
     - kh-samples --help
     - kh-download-datasets --help
