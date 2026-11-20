@@ -37,10 +37,10 @@ Current release info
 Installing khiops
 =================
 
-Installing `khiops` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `khiops` from the `conda-forge/label/rc` channel can be achieved by adding `conda-forge/label/rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/rc
 conda config --set channel_priority strict
 ```
 
@@ -86,7 +86,7 @@ It is possible to list all of the versions of `khiops` available on your platfor
 <summary>With conda</summary>
 
 ```
-conda search khiops --channel conda-forge
+conda search khiops --channel conda-forge/label/rc
 ```
 
 </details>
@@ -95,7 +95,7 @@ conda search khiops --channel conda-forge
 <summary>With mamba</summary>
 
 ```
-mamba search khiops --channel conda-forge
+mamba search khiops --channel conda-forge/label/rc
 ```
 
 </details>
@@ -104,7 +104,7 @@ mamba search khiops --channel conda-forge
 <summary>With pixi</summary>
 
 ```
-pixi search khiops --channel conda-forge
+pixi search khiops --channel conda-forge/label/rc
 ```
 
 </details>
@@ -114,13 +114,13 @@ pixi search khiops --channel conda-forge
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search khiops --channel conda-forge
+mamba repoquery search khiops --channel conda-forge/label/rc
 
 # List packages depending on `khiops`:
-mamba repoquery whoneeds khiops --channel conda-forge
+mamba repoquery whoneeds khiops --channel conda-forge/label/rc
 
 # List dependencies of `khiops`:
-mamba repoquery depends khiops --channel conda-forge
+mamba repoquery depends khiops --channel conda-forge/label/rc
 ```
 
 </details>
