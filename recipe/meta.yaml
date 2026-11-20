@@ -1,13 +1,13 @@
 {% set name = "khiops" %}
-{% set version = "11.0.2.0" %}
+{% set version = "11.0.2.1a.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/ff/ee/1b513288a37626213bacf7c7bfb8c4e9b01c7e86f8312517219260306291/{{ name }}-{{ version }}.tar.gz
-  sha256: 111d85dbe9dadd93414117ba9643c4e719de10c08fa696fbb92a7e2e7bde42fa
+  url: https://test-files.pythonhosted.org/packages/b4/b5/0a1b3017c3f9566a308ed4a535685fd3c8ab782c510ff4921439213027c0/{{ name }}-{{ version.replace("a.0", "a0") }}.tar.gz
+  sha256: dad6aa2e7790b465ba93c1d3f47ffe92ae905664b3766faf01dcc6b3938cf0b2
 
 build:
   entry_points:
